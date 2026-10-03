@@ -29,12 +29,18 @@ export function Navbar() {
                 'Amenities',
                 'Site Plans',
                 'Location',
+                'Bookings',
                 'Contact',
+                'Blogs',
               ].map((item) => (
                 <a
                   key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className='text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-md font-semibold'
+                  href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+                  className={`transition-colors px-3 py-2 rounded-md text-sm font-bold ${
+                    item === 'Bookings'
+                      ? 'bg-primary/10 text-primary hover:bg-primary hover:text-white border border-primary/30 rounded-lg'
+                      : 'text-secondary hover:text-primary'
+                  }`}
                 >
                   {item}
                 </a>
@@ -59,7 +65,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className='xl:hidden bg-white/95 backdrop-blur-sm'
+          className='xl:hidden bg-white/95 backdrop-blur-sm shadow-xl'
         >
           <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
             {[
@@ -70,11 +76,13 @@ export function Navbar() {
               'Amenities',
               'Site Plans',
               'Location',
+              'Bookings',
               'Contact',
+              'Blogs',
             ].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
                 className='text-gray-700 hover:text-primary block px-3 py-2 rounded-md text-base font-medium'
                 onClick={() => setIsOpen(false)}
               >
@@ -84,6 +92,7 @@ export function Navbar() {
           </div>
         </motion.div>
       )}
+
 
     </nav>
   );

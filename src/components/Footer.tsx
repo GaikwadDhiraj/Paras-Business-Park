@@ -69,13 +69,30 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href='#bookings'
+                  className='text-gray-400 hover:text-white transition-colors'
+                >
+                  Bookings (Shops & 2/3 BHK)
+                </a>
+              </li>
+              <li>
+                <a
                   href='#contact'
                   className='text-gray-400 hover:text-white transition-colors'
                 >
                   Contact
                 </a>
               </li>
+              <li>
+                <a
+                  href='#blogs'
+                  className='text-gray-400 hover:text-white transition-colors'
+                >
+                  Blogs & News
+                </a>
+              </li>
             </ul>
+
 
 
           </div>

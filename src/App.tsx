@@ -7,7 +7,9 @@ import { Gallery } from './components/Gallery';
 import { Amenities } from './components/Amenities';
 import { SitePlans } from './components/SitePlans';
 import { Location } from './components/Location';
+import { Bookings } from './components/Bookings';
 import { Contact } from './components/Contact';
+import { Blogs } from './components/Blogs';
 import { AdminPanel } from './components/AdminPanel';
 import { Footer } from './components/Footer';
 
@@ -22,7 +24,9 @@ function LandingPage() {
       <Amenities />
       <SitePlans />
       <Location />
+      <Bookings />
       <Contact />
+      <Blogs />
       <Footer />
     </div>
   );

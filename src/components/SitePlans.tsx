@@ -104,7 +104,8 @@ export function SitePlans() {
   ];
 
   return (
-    <section id='site plans' className='py-20 bg-gray-50'>
+    <section id='site-plans' className='py-20 bg-gray-50'>
+
       <div className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='text-center mb-16'>
           <motion.h2
